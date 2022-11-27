@@ -1,0 +1,39 @@
+.footer-heading {
+    margin-top: 115px;
+ text-align: center;
+ align-items: center;
+
+}
+.footer-heading h2{
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.footer{
+
+    bottom:0;
+    width:100%;
+    height: 420px;
+    bottom: 0px;
+    
+    
+}
+
+.search-wrapper{
+    align-items: center;
+    text-align: center;
+
+}
+
+  
+  .search-input {
+  align-items: center;
+  }
+  
+  .footer-line{
+    top: 330px;
+  }
+ p{
+   
+    text-align: center;
+    align-items: center;
+}
