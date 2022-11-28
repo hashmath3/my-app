@@ -37,7 +37,7 @@ function Home() {
         <div><Landings/> </div>
         <div class="spacer"></div>
         <div >  <Landing2/></div>
-        <div class="spacer1"></div>
+        <div  id='landing-pages' class="spacer1"></div>
         <div><LandingTitle text="Landing Pages"/></div>
        <div className='sub'> <p>Choose from pre-built layouts of our unique landing pages</p></div>
         <div><LandingImages/></div>

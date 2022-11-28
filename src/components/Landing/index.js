@@ -22,11 +22,11 @@ function Landings() {
         <div className='landing-image'>
         <img src={ReactLogo} alt="React Logo" />
         </div>
-        <div className='symbol'>
-       <ExpandCircleDownRoundedIcon sx={{    width: "2.75rem",
+        <div className='symbol'><a className='symbol' href='#landing-pages'>
+        <ExpandCircleDownRoundedIcon sx={{    width: "2.75rem",
     height: "2.75rem",
     padding: "0"}}
-      /><div> <span >View Landings</span></div>
+      /><div> <span >View Landings</span></div></a>
         </div>
        </div>
         <div className='landing-second'><img src={Image} alt="React Logo" /></div>
