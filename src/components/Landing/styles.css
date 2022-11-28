@@ -88,5 +88,21 @@ bottom: 55px;
     .landing-third{
         display: none;
     }
+    .landing-title h1{
+        text-align: center;
+        margin-left: 100px;
+    }
+  .landing-sub p{
+    text-align: center;
+    margin-left: 100px;
+    font-size: calc(1 rem + 0.3vw);
+  }
+  .landing-image{
+    align-items: center; 
+    margin-left: 80px;
+  }
+  .symbol{
+    align-items: center; 
+    margin-left: 80px;}
 
 }

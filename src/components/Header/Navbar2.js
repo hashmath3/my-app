@@ -5,7 +5,7 @@ import "./styles.css";
 import Button from '@mui/material/Button';
 import Selected from './Selected';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-
+import TemporaryDrawer from './Drawer'
 import Popovers from './Popover';
 import Popovers2 from './Popovers2';
 import Popovers3 from './Popovers3';
@@ -29,7 +29,9 @@ function Navbar2() {
     <Popovers3/>
     <Popovers4/>
     <Popovers5/>
-
+    <div className="menu-div">
+        <TemporaryDrawer/>
+        </div>
 
    
     </div>
