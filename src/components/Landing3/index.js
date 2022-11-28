@@ -8,8 +8,15 @@ import img5 from '../../SvgCollections/html5.svg';
 import img6 from '../../SvgCollections/nodejs.svg';
 import img7 from '../../SvgCollections/sass.svg';
 import img8 from '../../SvgCollections/js.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHtml5 } from '@fortawesome/free-solid-svg-icons'
+import { faJs } from '@fortawesome/free-brands-svg-icons';
 
 import Cards2 from './Cards2';
+import Card8 from './Card8';
+import Card7 from './Card7';
+import Card6 from './Card6';
+import Card5 from './Card5';
 function Landing3() {
   return (
     <div className="row12">
@@ -18,10 +25,9 @@ function Landing3() {
         <Cards2 src={img3} heading= "Mobile Freindly Interface" para="It's not a surprise that nowadays over 80% of users surf the inernet using their mobile devices. Silicon is 100% responsive and optimized for small touch screens."/>
         <Cards2 src={img4} heading= "Touch-Enabled Sliders" para=" In the era of touch screens it's important to ensure great user experience on mobile, especially when it comes to such frequently used interface component as slider."/>
         <Cards2 src={img5} heading= "W3C Valid HTML Code" para="All HTML files are checked via W3C validator to ensure 100% valid code. As you probably know invalid HTML limits innovation, but Silicon is innovative at its core."/>
-        <Cards2 src={img6} heading= "Kick-Start Your Development" para="Start your development process fast and easy with Node.js and Gulp setup. Configuration files are included in download package. Full tasks automation."/>
-        <Cards2 src={img7} heading= "Easy to Customize with Sass" para="Silicon is built using Sass. Easily change colors, typography and much more. It is the most mature, stable, and powerful CSS extension language in the world."/>
-        <Cards2 src={img8} heading= "Future Proof Java-Script" para="Silicon core scripts as well as all dependencies are written in vanilla JS. And now with Bootstrap 5 we finally drop jQuery and use ES6 modules."/>
-
+        <Card6  heading= "Kick-Start Your Development" para="Start your development process fast and easy with Node.js and Gulp setup. Configuration files are included in download package. Full tasks automation."/>
+        <Card7 heading= "Easy to Customize with Sass" para="Silicon is built using Sass. Easily change colors, typography and much more. It is the most mature, stable, and powerful CSS extension language in the world."/>
+        <Card8  heading= "Future Proof Java-Script" para="Silicon core scripts as well as all dependencies are written in vanilla JS. And now with Bootstrap 5 we finally drop jQuery and use ES6 modules." />
 
  
     </div>

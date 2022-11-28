@@ -1,5 +1,5 @@
 .column-12{
-    background-color: var(--darkgrey);
+    
     width: 292px;
     height: 260px;
    
@@ -25,7 +25,13 @@
   .square{
     border-radius: 5px;
     background-color: #f3f6ff;
-    padding: 0.5rem;
+    padding: 0.9rem;
+  }
+  .card-para h4{margin-top: 10px;}
+  .card-para p{
+    margin-top: 10px;
+    
+
   }
   .row1{
 

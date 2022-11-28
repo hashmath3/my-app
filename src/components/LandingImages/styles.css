@@ -8,8 +8,11 @@
 }  
 .images h2{
     color: rgb(46, 45, 45);
+    opacity: 0.9;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 .images h2:hover{
     cursor: pointer;
@@ -22,4 +25,7 @@
     flex-wrap: wrap;
     gap: 25px;
     margin-left: 10px;
+    margin-top: 30px;
+   
+    
 }

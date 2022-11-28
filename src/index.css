@@ -19,6 +19,29 @@ overflow: auto;
 height: 100%;
 overflow-y: scroll;
 
+
+}
+:root {
+  --blue:#18978F;
+  --white: #ffffff;
+  --black: #262626;
+  --grey: #888;
+  --darkgrey: #1b1b1b;
+  --green: #61c96f;
+  --red: #f94141;
+}
+[data-theme="light"] {
+  --white: #ffffff;
+  --black: #262626;
+  --grey: #888;
+  --darkgrey: #1b1b1b;
+}
+
+[data-theme="dark"] {
+  --white: #262626;
+  --black: #fff;
+  --grey: #888;
+  --darkgrey: #f3f3f3;
 }
 
 .spacer{
@@ -44,13 +67,17 @@ overflow-y: scroll;
   margin-top: 24px;
 
 }
+body::-webkit-scrollbar
+{
+  display: none;
+} 
 
-/* .svg{
+ /* .svg{
   background: linear-gradient(to right, #6366f1, #8B5CF6, #D946EF);
  
   -webkit-text-fill-color: transparent;
   font-size: calc(1.325rem + 0.9vw) !important;
-} */
+}  */
 .top-button {
   position: fixed;
   right: 2rem;

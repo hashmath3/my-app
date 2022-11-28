@@ -43,6 +43,7 @@ function Home() {
         <div><LandingImages/></div>
         <div class="spacer1"></div>
         <div><LandingTitle text="More Silicon Features"/></div>
+        <div class="spacer"></div>
 <div><Landing3 svg=""/></div>
 <div class="spacer1"></div>
 <ExpandLessOutlinedIcon

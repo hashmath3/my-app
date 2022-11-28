@@ -4,6 +4,7 @@ import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
+import { useState } from "react";
 function Selected() {
   const IOSSwitch = styled((props) => (
     <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -55,11 +56,49 @@ function Selected() {
       }),
     },
   }));
+  // const setDark = () => {
+  //   localStorage.setItem("theme", "dark");
+  //   document.documentElement.setAttribute("data-theme", "dark");
+  // };
+
+  // const setLight = () => {
+  //   localStorage.setItem("theme", "light");
+  //   document.documentElement.setAttribute("data-theme", "light");
+  // };
+
+  // const storedTheme = localStorage.getItem("theme");
+
+  // const prefersDark =
+  //   window.matchMedia &&
+  //   window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  // const defaultDark =
+  //   storedTheme === "dark" || (storedTheme === null && prefersDark);
+
+  // const [darkTheme, setDarkTheme] = useState(
+  //   defaultDark == "dark" ? true : false
+  // );
+
+  // if (defaultDark) {
+  //   setDark();
+  // }
+
+  // const toggleTheme = (e) => {
+  //   if (!darkTheme) {
+  //     setDark();
+  //   } else {
+  //     setLight();
+  //   }
+  //   setDarkTheme(!darkTheme);
+  // };
   return (
     <div>
      <Stack direction="row" spacing={1} alignItems="center">
         <Typography>Light</Typography>
-        <IOSSwitch sx={{ m: 1 }} defaultChecked />
+        <IOSSwitch sx={{ m: 1 }} 
+        // defaultChecked value={!darkTheme}
+        //   onClick={() => toggleTheme()}
+          />
        
            <Typography>Dark</Typography>
       </Stack>   </div>
