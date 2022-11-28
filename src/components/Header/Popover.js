@@ -9,79 +9,53 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ReactLogo from '../../assests/navbarpic.webp';
 
 function Popovers() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-
-    const handlePopoverOpen = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-  
-    const handlePopoverClose = () => {
-      setAnchorEl(null);
-    };
-  
-    const open = Boolean(anchorEl);
+ 
   return (
-    <div> <Typography
-    aria-owns={open ? 'mouse-over-popover' : undefined}
-    aria-haspopup="true"
-    onMouseEnter={handlePopoverOpen}
-    onMouseLeave={handlePopoverClose}
-  >
- <div className='down'>
- <span> Landing</span> <KeyboardArrowDownIcon/></div>
-  </Typography>
-  <Popover
-    id="mouse-over-popover"
-    sx={{
-      pointerEvents: 'none',
-    }}
-    open={open}
-    anchorEl={anchorEl}
-    anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'left',
-    }}
-    transformOrigin={{
-      vertical: 'top',
-      horizontal: 'left',
-    }}
-    onClose={handlePopoverClose}
-    disableRestoreFocus
-  >  <div className='pop-row2'>
+    <div>
+    <div class="dropdown">
+  <button class="dropbtn"><div className='down'>
+ <span> Landing</span> <KeyboardArrowDownIcon sx={{color:"black"}} /></div></button>
+  <div class="dropdown-content">
+  <div className='pop-row2'>
   <div>
     
   <img src={ReactLogo} alt="React Logo" />
 </div>
 <div>
     
-        <p>Template intro Page</p>
-        <p>Mobile App Showcase</p>
-        <p>Mobile App Showcase v.2</p>
-        <div style={{display:"flex" , gap:"5px"}}> <p>Startup</p>
+        <p className='drop-item'>Template intro Page</p>
+        <p className='drop-item'>Mobile App Showcase</p>
+        <p className='drop-item'>Mobile App Showcase v.2</p>
+        <div style={{display:"flex" , gap:"2px"}}> <p className='drop-item'>Startup</p>
         <button style={{backgroundColor:"#22c55e" , color:"white" ,width:"50px", borderColor:"#22c55e" , borderRadius:"4px"}}>New</button></div>
-        <p>Saas v.1</p>
-        <p>Saas v.1 </p>
-        <p>Saas v.1 </p>
-        <p>Financial Consulting </p>
-        <p>Medical</p>
+        <p className='drop-item'>Saas v.1</p>
+        <p className='drop-item'>Saas v.1 </p>
+        <p className='drop-item'>Saas v.1 </p>
+        <p className='drop-item'>Financial Consulting </p>
+        <p className='drop-item'>Medical</p>
 
 </div>
 <div>
    
-        <p>IT(Software) Company</p>
-        <p>Conference </p>
-        <p>Digital Agency</p>
+        <p className='drop-item'>IT(Software) Company</p>
+        <p className='drop-item'>Conference </p>
+        <p className='drop-item'>Digital Agency</p>
         
-        <p>Blog Homepage</p>
+        <p className='drop-item'>Blog Homepage</p>
        
         
 
 </div>
 </div>
+  </div>
+</div>
+    
+
+</div>
+
 
  
 
-  </Popover></div>
   )
 }
 

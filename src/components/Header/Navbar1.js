@@ -15,7 +15,7 @@ function Navbar1() {
         
       
           </div>
-          <div className="menu-div1">
+          <div className="menu-div">
         
  
       <Button variant="contained" 

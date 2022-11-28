@@ -3,35 +3,19 @@ import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 
 function Popovers5() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-
-    const handlePopoverOpen = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-  
-    const handlePopoverClose = () => {
-      setAnchorEl(null);
-    };
-  
-    const open = Boolean(anchorEl);
-  return (
-    <div> <Typography
-    aria-owns={open ? 'mouse-over-popover' : undefined}
-    aria-haspopup="true"
-    onMouseEnter={handlePopoverOpen}
-    onMouseLeave={handlePopoverClose}
-  >
-    <div className='down'>
- <span>Docs</span>
- </div>
-  </Typography>
-  <Popover
    
-  >
-  
+  return (
+    <div><div class="dropdown">
+    <button class="dropbtn"><div className='down'>
+ <span> Docs</span>
+ </div></button>
+    <div class="dropdown-content5">
+   
+    </div>
+  </div>
  
-
-  </Popover></div>
+    
+</div>
   )
 }
 

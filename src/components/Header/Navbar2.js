@@ -27,9 +27,10 @@ function Navbar2() {
     <Popovers/>
     <Popovers2/>
     <Popovers3/>
-    <Popovers4/>
-    <Popovers5/>
-    <div className="menu-div">
+    <div style={{marginTop:"-5px", marginLeft:"-19px"}}>  <Popovers4/></div>
+   <div style={{marginTop:"-5px" }}><Popovers5/></div>
+    
+    <div className="menu-divs">
         <TemporaryDrawer/>
         </div>
 

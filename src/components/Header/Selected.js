@@ -14,7 +14,9 @@ function Selected() {
     padding: 0,
     '& .MuiSwitch-switchBase': {
       padding: 0,
-      margin: 2,
+      
+      marginTop: "1.5px",
+    marginLeft: "2.5px",
       transitionDuration: '300ms',
       '&.Mui-checked': {
         transform: 'translateX(16px)',

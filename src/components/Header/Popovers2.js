@@ -4,94 +4,64 @@ import Typography from '@mui/material/Typography';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 function Popovers2() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-
-    const handlePopoverOpen = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
   
-    const handlePopoverClose = () => {
-      setAnchorEl(null);
-    };
-  
-    const open = Boolean(anchorEl);
   return (
-    <div> <Typography
-    aria-owns={open ? 'mouse-over-popover' : undefined}
-    aria-haspopup="true"
-    onMouseEnter={handlePopoverOpen}
-    onMouseLeave={handlePopoverClose}
-  >
-    <div className='down'>
- <span> Pages</span> <KeyboardArrowDownIcon/></div>
-  </Typography>
-  <Popover
-    id="mouse-over-popover"
-    sx={{
-      pointerEvents: 'none',
-    }}
-    open={open}
-    anchorEl={anchorEl}
-    anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'left',
-    }}
-    transformOrigin={{
-      vertical: 'top',
-      horizontal: 'left',
-    }}
-    onClose={handlePopoverClose}
-    disableRestoreFocus
-  >
-    <div className='pop-row2'>
-        <div>
-            <p><b>About Us</b></p>
-            <br></br>
-              <p>About v.1</p>
-              <p>About v.2</p>
-              <br></br>
-              <p><b>Services</b></p>
-              <br></br>
-              <p>Services v.1 </p>
-              <p>Services v.2 </p>
-              <p>Services Details v.1 </p>
-              <p>Services Details v.2 </p>
-   
-    </div>
-    <div>
-            <p><b>Blog</b></p>
-            <br></br>
-              <p>List View with Sidebar</p>
-              <p>Grid View with Sidebar</p>
-              <p>List View no Sidebar</p>
-              <p>Grid View no Sidebar</p>
-              <p>Services v.2 </p>
-              <p>Simple Feed </p>
-              <p>Podcast </p>
-   
-    </div>
-    <div>
-            <p><b>Pricing</b></p>
-            <br></br>
-              <p>Pricing Page</p>
-              <br></br>
-              <p><b>Contacts</b></p>
-              <br></br>
-              <p>Contacts v.1</p>
-              <p>Contacts v.2 </p>
-              <p>Contacts v.3 </p>
-              <br></br>
-              <p><b>Specialty</b> </p>
-              <br></br>
-              <p>404 Error v.1</p>
-              <p> 404 Error v.2 </p>
-              
-   
-    </div>
-    </div>
+    <div> 
+   <div class="dropdown">
+  <button class="dropbtn"><div className='down'>
+ <span> Pages</span> <KeyboardArrowDownIcon sx={{color:"black"}} /></div></button>
+  <div class="dropdown-content  dropdown-content2 ">
+  <div className='pop-row2'>
+<div>
+     <p ><b>About Us</b></p>
+  
+       <p className='drop-item'>About v.1</p>
+       <p className='drop-item'>About v.2</p>
+      <br></br>
+       <p className='drop-item'><b>Services</b></p>
+      <br></br>
+       <p className='drop-item'>Services v.1 </p>
+       <p className='drop-item'>Services v.2 </p>
+       <p className='drop-item'>Services Details v.1 </p>
+       <p className='drop-item'>Services Details v.2 </p>
 
-  </Popover></div>
+</div>
+<div>
+     <p ><b>Blog</b></p>
+   
+       <p className='drop-item'>List View with Sidebar</p>
+       <p className='drop-item'>Grid View with Sidebar</p>
+       <p className='drop-item'>List View no Sidebar</p>
+       <p className='drop-item'>Grid View no Sidebar</p>
+       <p className='drop-item'>Services v.2 </p>
+       <p className='drop-item'>Simple Feed </p>
+       <p className='drop-item'>Podcast </p>
+
+</div>
+<div>
+     <p ><b>Pricing</b></p>
+    
+       <p className='drop-item'>Pricing Page</p>
+      <br></br>
+       <p className='drop-item'><b>Contacts</b></p>
+      <br></br>
+       <p className='drop-item'>Contacts v.1</p>
+       <p className='drop-item'>Contacts v.2 </p>
+       <p className='drop-item'>Contacts v.3 </p>
+      <br></br>
+       <p ><b>Specialty</b> </p>
+
+       <p className='drop-item'>404 Error v.1</p>
+       <p className='drop-item'> 404 Error v.2 </p>
+      
+
+</div>
+</div>
+  </div>
+</div>
+</div>
   )
 }
 
 export default Popovers2
+
