@@ -5,7 +5,10 @@ import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+
+
+
+
 function Footer() {
   return (
     <div className='footer'>
@@ -38,14 +41,19 @@ function Footer() {
        
           height:"41px",
           width:"128px",
+          backgroundColor: "#6366f1" 
           
             
           }}>Subscribe</Button>
       </div>
     </div>
     <div className='footer-line'>
+    
         <p>© All rights reserved. Made with <FavoriteBorderIcon/> by Hashmath </p>
        
+        
+       
+        
     </div>
     </div>
   )

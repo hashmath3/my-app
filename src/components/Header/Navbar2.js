@@ -1,6 +1,16 @@
 import React from 'react'
 import ReactLogo from '../../assests/logo.svg';
 import "./styles.css";
+
+import Button from '@mui/material/Button';
+import Selected from './Selected';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+
+import Popovers from './Popover';
+import Popovers2 from './Popovers2';
+import Popovers3 from './Popovers3';
+import Popovers4 from './Popover4';
+import Popovers5 from './Popovers5';
 function Navbar2() {
   return (  <div className="navbar2">
      
@@ -14,10 +24,32 @@ function Navbar2() {
    
     </div>
     <div className="navbar2-second">
-      
+    <Popovers/>
+    <Popovers2/>
+    <Popovers3/>
+    <Popovers4/>
+    <Popovers5/>
+
+
    
     </div>
-    <div className='navbar2-third'></div>
+    <div className='navbar2-third'>
+      {/* <span>Light</span> */}
+    
+      <Selected/>
+     
+    
+
+      <Button variant="contained"  size="medium" sx={{"&:hover": { backgroundColor: " #4044ee" },
+        padding: "10px 19px",
+      
+        borderRadius: 1.5
+        
+      }} startIcon={<ShoppingCartOutlinedIcon/>}>Buy Now
+      </Button>
+      
+     
+    </div>
 
   </div>
 

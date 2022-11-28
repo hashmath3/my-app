@@ -1,15 +1,20 @@
 .images img {
   width: 419px; 
   height: 249px;
-  border-color: rgb(80, 80, 80);
-  border-radius: 10px;
+  
+  border: 1px solid #e2e5f1 !important;
+
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%) !important;
 }  
 .images h2{
     color: rgb(46, 45, 45);
+    align-items: center;
+    text-align: center;
 }
 .images h2:hover{
     cursor: pointer;
-    color: rgba(6, 77, 105, 0.11);
+    color: #6366f1;
+   
 }
 .images1{
     display: flex;

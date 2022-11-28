@@ -10,20 +10,23 @@ function Landings() {
     <div className='landing'>
        <div className='landing-first'>
         <div className='landing-title'>
-            <h1><span>Silicon</span></h1>
+            <h1>Silicon</h1>
         </div>
-        <div>
+        <div className='landing-sub'>
            <p><span>Multipurpose Business /<br></br>
            Technology Template</span></p>
         
 
 
         </div>
-        <div>
+        <div className='landing-image'>
         <img src={ReactLogo} alt="React Logo" />
         </div>
-        <div>
-       <ExpandCircleDownRoundedIcon/> View Landings
+        <div className='symbol'>
+       <ExpandCircleDownRoundedIcon sx={{    width: "2.75rem",
+    height: "2.75rem",
+    padding: "0"}}
+      /><div> <span >View Landings</span></div>
         </div>
        </div>
         <div className='landing-second'><img src={Image} alt="React Logo" /></div>

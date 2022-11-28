@@ -13,10 +13,10 @@ import Cards from "./Cards";
 function Landing2() {
   return (
     <div className="Landing2-row">
-       <Cards image={image1}/>
-       <Cards image={image2}/>
-       <Cards image={image3}/>
-       <Cards image={image4}/>
+       <Cards image={image1} text="Light/Dark Mode"/>
+       <Cards image={image2} text="Figma Files Inculded"/>
+       <Cards image={image3} text="100+ UI Flexible Sections"/>
+       <Cards image={image4} text="Free Lifetime Updates"/>
       
     </div>
   )

@@ -9,7 +9,7 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 
 
-function Cards({image}) {
+function Cards({image, text}) {
   const styles = {
     media: {
       height: 100,
@@ -23,8 +23,11 @@ function Cards({image}) {
         <div className="column-1">
       
         <img src={image} alt="React Logo" />
+        <span>{text}</span>
         </div>
-        <div className="column-2"></div>
+        <div className="column-2">
+         
+        </div>
         <div className="column-3"></div>
         <div className="column-4"></div>
         </div>

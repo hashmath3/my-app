@@ -4,7 +4,7 @@ function Display({image ,text}) {
   return (
     <div className='images'>
         <img src={image} alt="React Logo" />
-        <h2><span>{text} </span></h2>
+        <h2>{text}</h2>
     </div>
   )
 }

@@ -17,8 +17,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 overflow: auto;
 height: 100%;
+overflow-y: scroll;
 
 }
+
 .spacer{
   display:block;
   height:95px;
@@ -35,12 +37,34 @@ height: 100%;
   content:"";
   
 }
+.sub p{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 54px;
+  margin-top: 24px;
 
-.svg{
+}
+
+/* .svg{
   background: linear-gradient(to right, #6366f1, #8B5CF6, #D946EF);
-  -webkit-background-clip: text;
+ 
   -webkit-text-fill-color: transparent;
   font-size: calc(1.325rem + 0.9vw) !important;
+} */
+.top-button {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border: 2px ;
+  border-radius: 50%;
+  color: beige;
+  font-size: 2rem !important;
+  height: 3rem !important;
+  width: 3rem !important;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(70, 69, 69);
+  opacity: 0.5;
 }
 
 
