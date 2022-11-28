@@ -8,9 +8,7 @@ function Header() {
     <div>
         <Navbar1/>
         <Navbar2/>
-        <div className="menu-div">
-        <TemporaryDrawer/>
-        </div>
+        
     </div>
   )
 }
