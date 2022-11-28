@@ -125,6 +125,12 @@ margin-right: 330px;
     .heading {
       font-size: 1.2rem;
     }
+    .navbar2-second{
+      display: none;
+    }
+    .navbar2-third{
+      display: none;
+    }
   }
   .navimg{
     width: 8%;

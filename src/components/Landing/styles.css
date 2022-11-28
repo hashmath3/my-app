@@ -81,3 +81,12 @@ bottom: 55px;
 {
   display: none;
 } 
+@media only screen and (max-width: 800px) {
+    .landing-second {
+        display: none;
+    }
+    .landing-third{
+        display: none;
+    }
+
+}
