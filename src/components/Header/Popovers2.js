@@ -13,46 +13,46 @@ function Popovers2() {
   <div class="dropdown-content  dropdown-content2 ">
   <div className='pop-row2'>
 <div>
-     <p ><b>About Us</b></p>
+     <span ><b>About Us</b></span>
   
-       <p className='drop-item'>About v.1</p>
-       <p className='drop-item'>About v.2</p>
+       <span className='drop-item'>About v.1</span>
+       <span className='drop-item'>About v.2</span>
       <br></br>
-       <p className='drop-item'><b>Services</b></p>
+       <span className='drop-item'><b>Services</b></span>
       <br></br>
-       <p className='drop-item'>Services v.1 </p>
-       <p className='drop-item'>Services v.2 </p>
-       <p className='drop-item'>Services Details v.1 </p>
-       <p className='drop-item'>Services Details v.2 </p>
+       <span className='drop-item'>Services v.1 </span>
+       <span className='drop-item'>Services v.2 </span>
+       <span className='drop-item'>Services Details v.1 </span>
+       <span className='drop-item'>Services Details v.2 </span>
 
 </div>
 <div>
-     <p ><b>Blog</b></p>
+     <span ><b>Blog</b></span>
    
-       <p className='drop-item'>List View with Sidebar</p>
-       <p className='drop-item'>Grid View with Sidebar</p>
-       <p className='drop-item'>List View no Sidebar</p>
-       <p className='drop-item'>Grid View no Sidebar</p>
-       <p className='drop-item'>Services v.2 </p>
-       <p className='drop-item'>Simple Feed </p>
-       <p className='drop-item'>Podcast </p>
+       <span className='drop-item'>List View with Sidebar</span>
+       <span className='drop-item'>Grid View with Sidebar</span>
+       <span className='drop-item'>List View no Sidebar</span>
+       <span className='drop-item'>Grid View no Sidebar</span>
+       <span className='drop-item'>Services v.2 </span>
+       <span className='drop-item'>Simple Feed </span>
+       <span className='drop-item'>Podcast </span>
 
 </div>
 <div>
-     <p ><b>Pricing</b></p>
+     <span ><b>Pricing</b></span>
     
-       <p className='drop-item'>Pricing Page</p>
+       <span className='drop-item'>Pricing Page</span>
       <br></br>
-       <p className='drop-item'><b>Contacts</b></p>
+       <span className='drop-item'><b>Contacts</b></span>
       <br></br>
-       <p className='drop-item'>Contacts v.1</p>
-       <p className='drop-item'>Contacts v.2 </p>
-       <p className='drop-item'>Contacts v.3 </p>
+       <span className='drop-item'>Contacts v.1</span>
+       <span className='drop-item'>Contacts v.2 </span>
+       <span className='drop-item'>Contacts v.3 </span>
       <br></br>
-       <p ><b>Specialty</b> </p>
+       <span ><b>Specialty</b> </span>
 
-       <p className='drop-item'>404 Error v.1</p>
-       <p className='drop-item'> 404 Error v.2 </p>
+       <span className='drop-item'>404 Error v.1</span>
+       <span className='drop-item'> 404 Error v.2 </span>
       
 
 </div>

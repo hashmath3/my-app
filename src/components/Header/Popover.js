@@ -23,25 +23,25 @@ function Popovers() {
 </div>
 <div>
     
-        <p className='drop-item'>Template intro Page</p>
-        <p className='drop-item'>Mobile App Showcase</p>
-        <p className='drop-item'>Mobile App Showcase v.2</p>
-        <div style={{display:"flex" , gap:"2px"}}> <p className='drop-item'>Startup</p>
-        <button style={{backgroundColor:"#22c55e" , color:"white" ,width:"50px", borderColor:"#22c55e" , borderRadius:"4px"}}>New</button></div>
-        <p className='drop-item'>Saas v.1</p>
-        <p className='drop-item'>Saas v.1 </p>
-        <p className='drop-item'>Saas v.1 </p>
-        <p className='drop-item'>Financial Consulting </p>
-        <p className='drop-item'>Medical</p>
+        <span className='drop-item'>Template intro Page</span>
+        <span className='drop-item'>Mobile App Showcase</span>
+        <span className='drop-item'>Mobile App Showcase v.2</span>
+        <div style={{display:"flex" }}> <span style={{width:"100px"}} className='drop-item'>Startup</span>
+        <button style={{backgroundColor:"#22c55e" , color:"white" ,width:"50px", height:"25px", borderColor:"#22c55e" , borderRadius:"4px" ,marginLeft:"-10px"}}>New</button></div>
+        <span className='drop-item'>Saas v.1</span>
+        <span className='drop-item'>Saas v.1 </span>
+        <span className='drop-item'>Saas v.1 </span>
+        <span className='drop-item'>Financial Consulting </span>
+        <span className='drop-item'>Medical</span>
 
 </div>
 <div>
    
-        <p className='drop-item'>IT(Software) Company</p>
-        <p className='drop-item'>Conference </p>
-        <p className='drop-item'>Digital Agency</p>
+        <span className='drop-item'>IT(Software) Company</span>
+        <span className='drop-item'>Conference </span>
+        <span className='drop-item'>Digital Agency</span>
         
-        <p className='drop-item'>Blog Homepage</p>
+        <span className='drop-item'>Blog Homepage</span>
        
         
 
