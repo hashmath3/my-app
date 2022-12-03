@@ -18,6 +18,6 @@ function App() {
   );
 }
 
+  
+
 export default App;
-// Use the given api to get the images and display on the browser such that when the user clicks the button the image should change randomly
-// https://dog.ceo/api/breeds/image/random
