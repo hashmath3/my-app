@@ -4,6 +4,7 @@ import ReactLogo from '../../assests/dark.svg';
 import Image from '../../assests/screens01.png'
 import Image2 from '../../assests/screens02.png'
 import ExpandCircleDownRoundedIcon from '@mui/icons-material/ExpandCircleDownRounded';
+
 function Landings() {
   return (
     <>
@@ -11,6 +12,7 @@ function Landings() {
        <div className='landing-first'>
         <div className='landing-title'>
             <h1>Silicon</h1>
+           
         </div>
         <div className='landing-sub'>
            <p><span>Multipurpose Business /<br></br>
@@ -19,6 +21,7 @@ function Landings() {
 
 
         </div>
+        
         <div className='landing-image'>
         <img src={ReactLogo} alt="React Logo" />
         </div>

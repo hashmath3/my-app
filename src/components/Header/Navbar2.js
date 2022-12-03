@@ -12,31 +12,34 @@ import Popovers3 from './Popovers3';
 import Popovers4 from './Popover4';
 import Popovers5 from './Popovers5';
 function Navbar2() {
+  
   return (  <div className="navbar2">
      
   <div className="navbar2-first">
     
   <img src={ReactLogo} alt="React Logo" />
+
   <h4>Silicon</h4>
 
   
    
    
     </div>
+    <div className="menu-drawer">
+        <TemporaryDrawer/>
+        </div> 
+
     <div className="navbar2-second">
     <Popovers/>
     <Popovers2/>
     <Popovers3/>
-    <div style={{marginTop:"-5px", marginLeft:"-19px"}}>  <Popovers4/></div>
-   <div style={{marginTop:"-5px" }}><Popovers5/></div>
+    <div style={{}}>  <Popovers4/></div>
+   <div style={{ }}><Popovers5/></div>
     
-    <div className="menu-divs">
-        <TemporaryDrawer/>
-        </div>
-
+    
    
     </div>
-    <div className='navbar2-third'>
+    <div className='navbar2-third' style={{marginLeft:"-57px"}}>
       {/* <span>Light</span> */}
     
       <Selected/>
@@ -45,7 +48,7 @@ function Navbar2() {
 
       <Button variant="contained"  size="medium" sx={{"&:hover": { backgroundColor: " #4044ee" },
         padding: "10px 19px",
-      
+       width:"10vw",
         borderRadius: 1.5
         
       }} startIcon={<ShoppingCartOutlinedIcon/>}>Buy Now

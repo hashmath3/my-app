@@ -1,6 +1,7 @@
 html{
   height: 100%;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 *{
@@ -18,31 +19,24 @@ body {
 overflow: auto;
 height: 100%;
 overflow-y: scroll;
+background-color: var(--white);
 
 
 }
-:root {
-  --blue:#18978F;
-  --white: #ffffff;
-  --black: #262626;
-  --grey: #888;
-  --darkgrey: #1b1b1b;
-  --green: #61c96f;
-  --red: #f94141;
-}
-[data-theme="light"] {
-  --white: #ffffff;
-  --black: #262626;
-  --grey: #888;
-  --darkgrey: #1b1b1b;
-}
-
-[data-theme="dark"] {
-  --white: #262626;
-  --black: #fff;
-  --grey: #888;
+body.light{
+  --white: #131022;
+  --black:  #fffdfd;
+  --grey: rgb(31 25 45 / 1);
   --darkgrey: #f3f3f3;
 }
+body{
+  --white:  #fffdfd;
+  --black: #131022;
+  --grey: #fffdfd;
+  --darkgrey: #1b1b1b;
+}
+
+
 
 .spacer{
   display:block;
@@ -67,10 +61,10 @@ overflow-y: scroll;
   margin-top: 24px;
 
 }
-body::-webkit-scrollbar
+/* body::-webkit-scrollbar
 {
   display: none;
-} 
+}  */
 
  /* .svg{
   background: linear-gradient(to right, #6366f1, #8B5CF6, #D946EF);
@@ -94,4 +88,19 @@ body::-webkit-scrollbar
   opacity: 0.5;
 }
 
+.Carousel{
+  display: none;
+}
 
+@media only screen and (max-width: 800px){
+  .non-Carousel{
+    display: none;
+  }
+
+  .Carousel{
+    display: block;
+    width: 90vw;
+    height: 60vw;
+  }
+  
+}

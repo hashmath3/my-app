@@ -2,6 +2,7 @@ import React from 'react'
 import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 function Popovers2() {
   
@@ -9,7 +10,8 @@ function Popovers2() {
     <div> 
    <div class="dropdown">
   <button class="dropbtn"><div className='down'>
- <span> Pages</span> <KeyboardArrowDownIcon sx={{color:"black"}} /></div></button>
+ <span> Pages</span> <span className='arrowdown'  ><KeyboardArrowDownIcon sx={{color:"var(--black)"}} /></span>
+ <span className='arrowup'><KeyboardArrowUpIcon sx={{color:"var(--black)"}} /></span></div></button>
   <div class="dropdown-content  dropdown-content2 ">
   <div className='pop-row2'>
 <div>

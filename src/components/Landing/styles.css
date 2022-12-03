@@ -98,7 +98,7 @@ a{
   .landing-sub p{
     text-align: center;
     margin-left: 100px;
-    font-size: calc(1 rem + 0.3vw);
+    font-size: calc(1 rem + 0.2vw);
   }
   .landing-image{
     align-items: center; 
@@ -106,8 +106,12 @@ a{
   }
   .symbol{
     align-items: center; 
-    margin-left: 80px;
+    margin-left: 50px;
 display: flex;
+}
+
+.symbol span{
+    width: 50px;
 }
 
 }

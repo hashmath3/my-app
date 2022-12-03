@@ -5,6 +5,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import { useState } from "react";
+import useLocalStorage from 'use-local-storage'
 function Selected() {
   const IOSSwitch = styled((props) => (
     <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -58,51 +59,27 @@ function Selected() {
       }),
     },
   }));
-  // const setDark = () => {
-  //   localStorage.setItem("theme", "dark");
-  //   document.documentElement.setAttribute("data-theme", "dark");
-  // };
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
-  // const setLight = () => {
-  //   localStorage.setItem("theme", "light");
-  //   document.documentElement.setAttribute("data-theme", "light");
-  // };
 
-  // const storedTheme = localStorage.getItem("theme");
-
-  // const prefersDark =
-  //   window.matchMedia &&
-  //   window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-  // const defaultDark =
-  //   storedTheme === "dark" || (storedTheme === null && prefersDark);
-
-  // const [darkTheme, setDarkTheme] = useState(
-  //   defaultDark == "dark" ? true : false
-  // );
-
-  // if (defaultDark) {
-  //   setDark();
-  // }
-
-  // const toggleTheme = (e) => {
-  //   if (!darkTheme) {
-  //     setDark();
-  //   } else {
-  //     setLight();
-  //   }
-  //   setDarkTheme(!darkTheme);
-  // };
+  const switchTheme =()=>{
+  
+    document.body.classList.toggle("light")
+    
+  
+  }
   return (
-    <div>
+    <div data-theme={theme}>
      <Stack direction="row" spacing={1} alignItems="center">
-        <Typography>Light</Typography>
+        <Typography sx={{color:"var(--black)"}}>Light</Typography>
         <IOSSwitch sx={{ m: 1 }} 
-        // defaultChecked value={!darkTheme}
-        //   onClick={() => toggleTheme()}
+       
+   onClick={switchTheme}
+ 
           />
        
-           <Typography>Dark</Typography>
+           <Typography sx={{color:"var(--black)"}}>Dark</Typography>
       </Stack>   </div>
   )
 }

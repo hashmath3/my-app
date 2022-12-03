@@ -27,17 +27,18 @@ function Footer() {
         <div className="search-wrapper">
       <div className="search-input">
     
-        <TextField id="outlined-basic"   placeholder="Your email"
+        <TextField id="outlined-basic"   placeholder="Your email" sx={{   borderColor: "var(--black)",}}
         
           InputProps={{
             style: {
               borderRadius: "10px 2px 2px 10px",
+              borderColor: "var(--black)",
               fontSize: 14,
               height: 42,
-              width: 505,},
+              width: "40vw",},
           startAdornment: (
             <InputAdornment position="start">
-                 <EmailOutlinedIcon sx={{ color: "var(--grey)" }} />
+                 <EmailOutlinedIcon sx={{ color: "var(--black)" }} />
             </InputAdornment>
           ),
         }} variant="outlined" />

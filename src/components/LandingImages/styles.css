@@ -7,12 +7,13 @@
   box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%) !important;
 }  
 .images h2{
-    color: rgb(46, 45, 45);
+    color: var(--black);
     opacity: 0.9;
     align-items: center;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 50px;
+    
 }
 .images h2:hover{
     cursor: pointer;
@@ -28,4 +29,12 @@
     margin-top: 30px;
    
     
+}
+@media only screen and (max-width: 800px) 
+{
+.images img {
+    width: 349px; 
+    height: 189px;
+
+}
 }

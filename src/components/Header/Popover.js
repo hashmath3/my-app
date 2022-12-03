@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import ReactLogo from '../../assests/navbarpic.webp';
 
 function Popovers() {
@@ -14,7 +15,9 @@ function Popovers() {
     <div>
     <div class="dropdown">
   <button class="dropbtn"><div className='down'>
- <span> Landing</span> <KeyboardArrowDownIcon sx={{color:"black"}} /></div></button>
+ <span> Landing</span> <span className='arrowdown'  ><KeyboardArrowDownIcon sx={{color:"var(--black)"}} /></span>
+ <span className='arrowup'><KeyboardArrowUpIcon sx={{color:"var(--black)"}} /></span>
+ </div></button>
   <div class="dropdown-content">
   <div className='pop-row2'>
   <div>

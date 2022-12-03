@@ -9,6 +9,9 @@ import NorthRoundedIcon from "@mui/icons-material/NorthRounded";
 import ExpandLessOutlinedIcon from '@mui/icons-material/ExpandLessOutlined';
 
 
+import Example from './components/Carousel6';
+
+
 function Home() {
   let mybutton = document.getElementById("top-button");
 
@@ -36,13 +39,15 @@ function Home() {
     <div>
         <div><Landings/> </div>
         <div class="spacer"></div>
-        <div >  <Landing2/></div>
+        <div className='non-Carousel' >  <Landing2/></div>
+        <div className=' Carousel'><Example/></div> 
         <div  id='landing-pages' class="spacer1"></div>
-        <div><LandingTitle text="Landing Pages"/></div>
-       <div className='sub'> <p>Choose from pre-built layouts of our unique landing pages</p></div>
-        <div><LandingImages/></div>
+        <div style={{color:"var(--black)"}}><LandingTitle text="Landing Pages"/></div>
+       <div className='sub' style={{color:"var(--black)"}}> <p>Choose from pre-built layouts of our unique landing pages</p></div>
+        <div ><LandingImages/></div>  
+      
         <div class="spacer1"></div>
-        <div><LandingTitle text="More Silicon Features"/></div>
+        <div style={{color:"var(--black)"}}><LandingTitle text="More Silicon Features"/></div>
         <div class="spacer"></div>
 <div><Landing3 svg=""/></div>
 <div class="spacer1"></div>

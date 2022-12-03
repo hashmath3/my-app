@@ -19,6 +19,7 @@
     transition: all 0.3s ;
     cursor: pointer;
     transform: scale(1.05);
+    background-color: var(--grey);
   }
   .column-1 span{
     align-items: center;
@@ -26,7 +27,9 @@
     font-weight: 700 !important;
     font-size: 1.125rem !important;
     opacity: 0.6;
+    color: var(--black);
     margin-left: 25px;
+   
   }
   .Landing2-row{
     display: flex;
