@@ -24,17 +24,21 @@ background-color: var(--white);
 
 }
 body.light{
-  --white: #131022;
-  --black:  #fffdfd;
-  --grey: rgb(31 25 45 / 1);
-  --darkgrey: #f3f3f3;
-}
-body{
   --white:  #fffdfd;
   --black: #131022;
   --grey: #fffdfd;
   --darkgrey: #1b1b1b;
 }
+body{
+  --white: #131022;
+  --black:  #fffdfd;
+  --grey: rgb(31 25 45 / 1);
+  --darkgrey: #f3f3f3;
+
+
+
+}
+
 
 
 
